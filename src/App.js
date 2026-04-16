@@ -605,11 +605,8 @@ function Signup({ onSwitch, onLogin, toast, users, setUsers }) {
             : "Create Account →"}
         </button>
 
-        <p className="auth-switch fade-up5">
-  Already registered? 
-  <a href="#" onClick={(e) => { e.preventDefault(); onSwitch(); }}>
-    Sign in
-  </a>
+       <p className="auth-switch fade-up5">
+  Already registered? <a onClick={onSwitch}>Sign in</a>
 </p>
       </div>
     </div>
@@ -698,11 +695,8 @@ function Login({ onSwitch, onLogin, toast, users }) {
           {loading?<span className="spinner" style={{width:18,height:18}}/>:"Sign In →"}
         </button>
 
-        <p className="auth-switch fade-up5">
-  No account? 
-  <a href="#" onClick={(e) => { e.preventDefault(); onSwitch(); }}>
-    Create
-  </a>
+       <p className="auth-switch fade-up5">
+  No account? <a onClick={onSwitch}>Create</a>
 </p>
 
         <div className="demo-hint fade-up5">
