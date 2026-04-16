@@ -606,8 +606,11 @@ function Signup({ onSwitch, onLogin, toast, users, setUsers }) {
         </button>
 
         <p className="auth-switch fade-up5">
-          Already registered? <a onClick={onSwitch}>Sign in</a>
-        </p>
+  Already registered? 
+  <a href="#" onClick={(e) => { e.preventDefault(); onSwitch(); }}>
+    Sign in
+  </a>
+</p>
       </div>
     </div>
   );
@@ -696,8 +699,11 @@ function Login({ onSwitch, onLogin, toast, users }) {
         </button>
 
         <p className="auth-switch fade-up5">
-          No account? <a onClick={onSwitch}>Create</a>
-        </p>
+  No account? 
+  <a href="#" onClick={(e) => { e.preventDefault(); onSwitch(); }}>
+    Create
+  </a>
+</p>
 
         <div className="demo-hint fade-up5">
           <p>🔑 Ex: admin@college.edu / admin123 | student: arjun@college.edu / student123</p>
